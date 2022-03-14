@@ -1,0 +1,34 @@
+.followers {
+  padding: 6rem 0;
+  background-color: $color-secondary;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+      gap: 3.5rem;
+    }
+  }
+
+  .counters__counter {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    i {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    &--number {
+      font-size: 3.5rem;
+      font-weight: bold;
+    }
+
+    &--title {
+      font-size: 2rem;
+    }
+  }
+}
